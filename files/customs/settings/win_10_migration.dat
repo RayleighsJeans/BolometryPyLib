@@ -1,0 +1,147 @@
+# Info
+# Path variables
+7Zip =
+	C:\Program Files\7-Zip
+CMAKE =
+	C:\PortablePrograms\cmake-3.11.0-rc3-win64-x64\bin
+GIMP 2 =
+	C:\Program Files\GIMP 2\bin
+GIT =
+	C:\Program Files\Git
+JAVA_HOME =
+	C:\PortablePrograms\Java\jdk1.8.0_102_x86_64
+MDS_PATH =
+	C:\PortablePrograms\MDSplus\tdi
+MDSPLUS_DIR =
+	C:\PortablePrograms\MDSplus
+PATH_JAVA =
+	C:\PortablePrograms\Java\jdk1.8.0_102_x86_64\jre\bin
+PATH_MDSPLUS =
+	C:\PortablePrograms\MDSplus\bin_x86_64
+PY_PACKAGES =
+	C:\PortablePrograms\WPy64-3680\python-3.6.8.amd64\Lib\site-packages
+PY_SCRIPTS =
+	C:\PortablePrograms\WPy64-3680\python-3.6.8.amd64\Scripts
+PYTHON =
+	C:\PortablePrograms\WPy64-3680\python-3.6.8.amd64
+PYTHONPATH =
+	\\sv-it-fs-1\roaming$\pih\Documents\git\QSB_Bolometry;C:\PortablePrograms\winpythonlibs\MDSplus;C:\PortablePrograms\winpythonlibs
+R =
+	C:\PortablePrograms\R-3.6.0\bin
+SUBLIME =
+	C:\PortablePrograms\Sublime_3143_x64\
+SUBLIME_MERGE =
+	C:\PortablePrograms\sublime_merge_build_1107_x64\
+SUMATRA =
+	C:\PortablePrograms\SumatraPDF\
+TEXHOME =
+	C:\texlive\2017\bin\win32
+w7x_path =
+	mds-control::/w7x/model/~t;mds-data-2::/w7x/new/~t;mds-data-2::/w7x/vault/~t
+
+Path =
+	C:\ProgramData\Oracle\Java\javapath;
+	C:\Windows\system32;
+	C:\Windows;
+	C:\Windows\System32\Wbem;
+	C:\Windows\System32\WindowsPowerShell\v1.0\;
+	c:\Program Files\MATLAB\Runtime\2014b\v84\runtime\win64;
+	C:\texlive\2017\bin\win32;
+	C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v84\runtime\win32;
+	c:\Program Files\MATLAB\R2014b\bin;
+	C:\Program Files\apache-maven-3.5.0\bin;
+	C:\Program Files (x86)\Heimdal\bin\;
+	C:\Program Files\Heimdal\bin\;
+	C:\Program Files\OpenAFS\Common;
+	C:\Program Files\OpenAFS\Client\Program;
+	C:\Program Files\TortoiseSVN\bin;
+	C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;
+	C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;
+	C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;
+	C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;
+	C:\Program Files\IVI Foundation\VISA\Win64\Bin\;
+	C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;
+	C:\Program Files (x86)\IVI Foundation\IVI\bin;
+	C:\Program Files\IVI Foundation\IVI\bin;
+	C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;
+	c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;
+	c:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;
+	%PATH_MDSPLUS%;
+	%PATH_JAVA%;
+	%SUMATRA%;
+	%SUBLIME%;
+	%JAVA_HOME%;
+	%7ZIP%;
+	$GIMP%;
+	%WINPYTHON%;
+	%PYTHON%;
+	%PY_SCRIPTS%;
+	%PY_PACKAGES%;
+	%SUBLIME_MERGE%;
+	%R%;
+	C:\PortablePrograms\Microsoft VS Code Insiders\bin
+
+
+# Software
+7Zip
+CMake
+Google Chrome
+Java
+MDSPlus
+Microsoft VS Code
+R
+Sulbime Text
+Sumatra PDF
+WinPython
+Xming
+
+
+texlive
+https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#tlportable
+
+
+git/Git Bash
+SublimeMerge
+VMWare Horizon Client
+IDL
+GIMP 2
+Logitech Options
+
+
+Spotify
+https://community.spotify.com/t5/Desktop-Windows/Spotify-portable-version/td-p/127856
+
+
+VLC
+TeXStudio
+LabVIEW 2014
+
+# NEW
+C:\Users\pih\Desktop\PortablePrograms\7-Zip
+C:\Users\pih\Desktop\PortablePrograms\7-Zip\App\7-Zip64
+C:\Users\pih\Desktop\PortablePrograms\cmake\bin
+C:\Users\pih\Desktop\PortablePrograms\FreeDownloadManager
+C:\Users\pih\Desktop\PortablePrograms\FreeDownloadManager\App\FreeDownloadManager
+C:\Users\pih\Desktop\PortablePrograms\GIMP
+C:\Users\pih\Desktop\PortablePrograms\GIMP\App\gimp\bin
+C:\Users\pih\Desktop\PortablePrograms\git
+C:\Users\pih\Desktop\PortablePrograms\git\bin
+C:\Users\pih\Desktop\PortablePrograms\Java
+C:\Users\pih\Desktop\PortablePrograms\Java\bin
+\\share.ipp-hgw.mpg.de\documents\pih\Documents\git\QSB_Bolometry\libinversion
+\\share.ipp-hgw.mpg.de\documents\pih\Documents\git\QSB_Bolometry\libprad
+\\share.ipp-hgw.mpg.de\documents\pih\Documents\git\QSB_Bolometry
+C:\Users\pih\Desktop\PortablePrograms\R
+C:\Users\pih\Desktop\PortablePrograms\R\App\R-Portable\bin
+C:\Users\pih\Desktop\PortablePrograms\SublimeText
+C:\Users\pih\Desktop\PortablePrograms\texlive\2019\bin\win32
+C:\Users\pih\Desktop\PortablePrograms\VLC
+C:\Users\pih\Desktop\PortablePrograms\VLC\App\vlc
+C:\Users\pih\Desktop\PortablePrograms\VSCode
+
+C:\Users\pih\Desktop\PortablePrograms\WPy64-3741
+C:\Users\pih\Desktop\PortablePrograms\WPy64-3741\python-3.7.4.amd64
+\\share.ipp-hgw.mpg.de\documents\pih\Documents\git\QSB_Bolometry
+C:\Users\pih\Desktop\PortablePrograms\winpythonlibs
+C:\Users\pih\Desktop\PortablePrograms\WPy64-3741\python-3.7.4.amd64\Lib\site-packages
+C:\Users\pih\Desktop\PortablePrograms\WPy64-3741\python-3.7.4.amd64\Scripts

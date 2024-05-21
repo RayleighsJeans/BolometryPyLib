@@ -1,0 +1,61 @@
+{
+    "label": "database",
+    "values": {
+        "magnetic_configurations": {
+            "EIM_000": {
+                "name": "EIM_beta000",
+                "description": "beta-scan with bell-shaped pressure profile ~ (1-s)^2; peaking factor = 3; runs with _l6ns151 have an enlarged volume - cover island region\nEIM configuration (ref. configuration A: standard, planned OP1.2 configuration). Flux surface geometry of EIM configuration corresponds to the experimental EJM configuration",
+                "URI": "1000_1000_1000_1000_+0000_+0000/10/06_l6ns151",
+                "beta": 0.0,
+                "peaking_factor": 3.011,
+                "pressure_gradient": null,
+                "volume": "increased"
+            },
+            "EIM_044": {
+                "name": "EIM_beta044",
+                "description": "beta-scan with bell-shaped pressure profile ~ (1-s)^2;peaking factor = 3; runs with _l6ns151 have an enlargedvolume - cover island region\nEIM configuration (ref. configuration A: standard,planned OP1.2 configuration). Flux surface geometryof EIM configuration corresponds to the experimental EJM configuration",
+                "URI": "1000_1000_1000_1000_+0000_+0000/10/06_l6ns151",
+                "beta": 0.44,
+                "peaking_factor": 4.58,
+                "pressure_gradient": null,
+                "volume": "increased"
+            },
+            "KJM_202": {
+                "name": "KJM_beta202",
+                "description": "another pressure profile guess; n/ne0=(1-s^4);Ti/Ti0=(1-s^4)^2; Te/Te0= 0.8*(1-s)^10 + 0.2*(1-s^4)^2; p=nk(Te+Ti); parameters n0=1e+19, Te0=8keV, Ti0=1keV leads to 14.4kPa. Further calculations by scaling this profile, which would mean e.g. different densities\nProfile-case for EUTERPE runs. Maximum pressure gradient at s=0.5 . Peaking factor is 2\nKJM configuration (ref. configuration E: high-mirror).Flux surface geometry of KJM configuration corresponds to the experimental KKM configuration",
+                "URI": "0972_0926_0880_0852_+0000_+0000/05/0954ams",
+                "beta": 2.02,
+                "peaking_factor": 2.044,
+                "pressure_gradient": 0.5,
+                "volume": "standard"
+            },
+            "FTM_060": {
+                "name": "FTM_beta060",
+                "description": "beta-scan with bell-shaped pressure profile ~ (1-s)^2; peaking factor = 3; runs ending with l8ns148 have an enlarged volume - cover island region\nTM configuration (ref. configuration C: high-iota, planned OP1.2 configuration)",
+                "URI": "1000_1000_1000_1000_-0690_-0690/02/06l8ns148",
+                "beta": 0.6,
+                "peaking_factor": 4.605,
+                "pressure_gradient": null,
+                "volume": "increased"
+            },
+            "AIM_207": {
+                "name": "AIM_beta207",
+                "description": "beta-sequence with pressure profile form 1-s\nAIM configuration (ref. configuration D: low-mirror)",
+                "URI": "1042_1042_1127_1127_+0000_+0000/01/10",
+                "beta": 2.07,
+                "peaking_factor": 2.057,
+                "pressure_gradient": null,
+                "volume": "standard"
+            },
+            "EIM_022": {
+                "name": "EIM_beta022",
+                "description": "beta-scan with bell-shaped pressure profile ~ (1-s)^2; peaking factor = 3; runs ending with l8ns148 have an enlarged volume - cover island region\nEIM configuration (ref. configuration A: standard, planned OP1.2 configuration). Flux surface geometry of EIM configuration corresponds to the experimental EJM configuration",
+                "URI": "1000_1000_1000_1000_+0000_+0000/10/03_l6ns151",
+                "beta": 0.22,
+                "peaking_factor": 4.548,
+                "pressure_gradient": null,
+                "volume": "increased"
+            }
+        }
+    }
+}

@@ -1,0 +1,292 @@
+Scope.geometry: 1936x1186+-8+-8
+Scope.update.disable: false
+Scope.update.disable_when_icon: true
+Scope.font: java.awt.Font[family=Dialog,name=Dialog,style=plain,size=12]
+
+
+Scope.color_0: Black,java.awt.Color[r=0,g=0,b=0]
+Scope.color_1: Blue,java.awt.Color[r=0,g=0,b=255]
+Scope.color_2: Cyan,java.awt.Color[r=0,g=255,b=255]
+Scope.color_3: Green,java.awt.Color[r=0,g=255,b=0]
+Scope.color_4: Magenta,java.awt.Color[r=255,g=0,b=255]
+Scope.color_5: Orange,java.awt.Color[r=255,g=200,b=0]
+Scope.color_6: Pink,java.awt.Color[r=255,g=175,b=175]
+Scope.color_7: Red,java.awt.Color[r=255,g=0,b=0]
+Scope.color_8: Yellow,java.awt.Color[r=255,g=255,b=0]
+
+Scope.data_server_name: W7X Archive
+Scope.data_server_class: w7x.W7XDataProvider
+Scope.data_server_server: mds-data-1.ipp-hgw.mpg.de
+Scope.reversed: false
+
+Scope.global_1_1.horizontal_offset: 0
+Scope.global_1_1.vertical_offset: 0
+
+Scope.columns: 3
+
+
+Scope.rows_in_column_1: 3
+
+Scope.plot_1_1.height: 351
+Scope.plot_1_1.grid_mode: 0
+Scope.plot_1_1.x_log: false
+Scope.plot_1_1.y_log: false
+Scope.plot_1_1.update_limits: true
+Scope.plot_1_1.legend: (-5.008837463125,3.2819026581019966)
+Scope.plot_1_1.experiment: W7X
+Scope.plot_1_1.num_shot: 1
+Scope.plot_1_1.num_expr: 1
+Scope.plot_1_1.continuous_update: 0
+Scope.plot_1_1.global_defaults: 261889
+Scope.plot_1_1.label_1: Ptot ECRH [MW]
+Scope.plot_1_1.y_expr_1: /ArchiveDB/codac/W7X/CBG_ECRH/TotalPower_DATASTREAM/V1/0/Ptot_ECRH/scaled/ * 1e-3
+Scope.plot_1_1.mode_1D_1_1: Line
+Scope.plot_1_1.mode_2D_1_1: xz(y)
+Scope.plot_1_1.color_1_1: 0
+Scope.plot_1_1.marker_1_1: 0
+Scope.plot_1_1.step_marker_1_1: 1
+
+Scope.plot_2_1.height: 351
+Scope.plot_2_1.grid_mode: 0
+Scope.plot_2_1.x_log: false
+Scope.plot_2_1.y_log: false
+Scope.plot_2_1.update_limits: true
+Scope.plot_2_1.legend: (-5.128092830550782,0.3702195640535496)
+Scope.plot_2_1.experiment: W7X
+Scope.plot_2_1.num_shot: 1
+Scope.plot_2_1.num_expr: 1
+Scope.plot_2_1.continuous_update: 0
+Scope.plot_2_1.global_defaults: 261889
+Scope.plot_2_1.label_1: Electron temp LCFS [keV]
+Scope.plot_2_1.y_expr_1: /ArchiveDB/raw/W7X/CoDaStationDesc.16007/FeedBackProcessDesc.20508_DATASTREAM/19/QME-ch20
+Scope.plot_2_1.mode_1D_1_1: Line
+Scope.plot_2_1.mode_2D_1_1: xz(y)
+Scope.plot_2_1.color_1_1: 4
+Scope.plot_2_1.marker_1_1: 0
+Scope.plot_2_1.step_marker_1_1: 1
+
+Scope.plot_3_1.height: 351
+Scope.plot_3_1.grid_mode: 0
+Scope.plot_3_1.x_log: false
+Scope.plot_3_1.y_log: false
+Scope.plot_3_1.update_limits: true
+Scope.plot_3_1.legend: (-1.1793985906682465,-19.998956994068802)
+Scope.plot_3_1.experiment: W7X
+Scope.plot_3_1.num_shot: 1
+Scope.plot_3_1.num_expr: 1
+Scope.plot_3_1.continuous_update: 0
+Scope.plot_3_1.global_defaults: 261889
+Scope.plot_3_1.label_1: AEH51 valve voltage [V]
+Scope.plot_3_1.y_expr_1: /ArchiveDB/raw/W7X/QSQ_Hebeam/Feedback_coefficients_AEH51_DATASTREAM/V1/4/AEH51 valve voltage/
+Scope.plot_3_1.mode_1D_1_1: Line
+Scope.plot_3_1.mode_2D_1_1: xz(y)
+Scope.plot_3_1.color_1_1: 7
+Scope.plot_3_1.marker_1_1: 0
+Scope.plot_3_1.step_marker_1_1: 1
+
+
+Scope.rows_in_column_2: 3
+
+Scope.plot_1_2.height: 351
+Scope.plot_1_2.grid_mode: 0
+Scope.plot_1_2.y_label: 1e19 m-3
+Scope.plot_1_2.x_log: false
+Scope.plot_1_2.y_log: false
+Scope.plot_1_2.update_limits: true
+Scope.plot_1_2.legend: (-3.528713421875,4.54969758548463)
+Scope.plot_1_2.experiment: W7X
+Scope.plot_1_2.num_shot: 1
+Scope.plot_1_2.num_expr: 1
+Scope.plot_1_2.continuous_update: 0
+Scope.plot_1_2.global_defaults: 261889
+Scope.plot_1_2.label_1: ne density [1e19 m-3]
+Scope.plot_1_2.y_expr_1: /ArchiveDB/raw/W7X/CoDaStationDesc.16339/DataModuleDesc.16341_DATASTREAM/0/Line integrated density * 1e-19
+Scope.plot_1_2.mode_1D_1_1: Line
+Scope.plot_1_2.mode_2D_1_1: xz(y)
+Scope.plot_1_2.color_1_1: 3
+Scope.plot_1_2.marker_1_1: 0
+Scope.plot_1_2.step_marker_1_1: 1
+
+Scope.plot_2_2.height: 351
+Scope.plot_2_2.grid_mode: 0
+Scope.plot_2_2.x_log: false
+Scope.plot_2_2.y_log: false
+Scope.plot_2_2.update_limits: true
+Scope.plot_2_2.legend: (-2.1713441915625,0.41626583425946523)
+Scope.plot_2_2.experiment: W7X
+Scope.plot_2_2.num_shot: 1
+Scope.plot_2_2.num_expr: 1
+Scope.plot_2_2.continuous_update: 0
+Scope.plot_2_2.global_defaults: 261889
+Scope.plot_2_2.label_1: Wdia [MJ]
+Scope.plot_2_2.y_expr_1: /Test/raw/Minerva1/Minerva.Magnetics15.Wdia/Wdia_compensated_QXD31CE001x_DATASTREAM/V1/0/Wdia_compensated_for_diamagnetic_loop QXD31CE001x *1e-3
+Scope.plot_2_2.mode_1D_1_1: Line
+Scope.plot_2_2.mode_2D_1_1: xz(y)
+Scope.plot_2_2.color_1_1: 5
+Scope.plot_2_2.marker_1_1: 0
+Scope.plot_2_2.step_marker_1_1: 1
+
+Scope.plot_3_2.height: 351
+Scope.plot_3_2.grid_mode: 0
+Scope.plot_3_2.x_log: false
+Scope.plot_3_2.y_log: false
+Scope.plot_3_2.update_limits: true
+Scope.plot_3_2.legend: (-3.1031080464767773,0.0010430059311991198)
+Scope.plot_3_2.experiment: W7X
+Scope.plot_3_2.num_shot: 1
+Scope.plot_3_2.num_expr: 5
+Scope.plot_3_2.xmin: -3
+Scope.plot_3_2.continuous_update: 0
+Scope.plot_3_2.title: He Valves
+Scope.plot_3_2.global_defaults: 257793
+Scope.plot_3_2.label_1: BG31
+Scope.plot_3_2.y_expr_1: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/1/Valve voltage output value BG031
+Scope.plot_3_2.mode_1D_1_1: Line
+Scope.plot_3_2.mode_2D_1_1: xz(y)
+Scope.plot_3_2.color_1_1: 0
+Scope.plot_3_2.marker_1_1: 0
+Scope.plot_3_2.step_marker_1_1: 1
+Scope.plot_3_2.label_2: BG32
+Scope.plot_3_2.y_expr_2: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/1/Valve voltage output value BG032
+Scope.plot_3_2.mode_1D_2_1: Line
+Scope.plot_3_2.mode_2D_2_1: xz(y)
+Scope.plot_3_2.color_2_1: 2
+Scope.plot_3_2.marker_2_1: 0
+Scope.plot_3_2.step_marker_2_1: 1
+Scope.plot_3_2.label_3: BG33
+Scope.plot_3_2.y_expr_3: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/1/Valve voltage output value BG033
+Scope.plot_3_2.mode_1D_3_1: Line
+Scope.plot_3_2.mode_2D_3_1: xz(y)
+Scope.plot_3_2.color_3_1: 4
+Scope.plot_3_2.marker_3_1: 0
+Scope.plot_3_2.step_marker_3_1: 1
+Scope.plot_3_2.label_4: BG34
+Scope.plot_3_2.y_expr_4: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/1/Valve voltage output value BG034
+Scope.plot_3_2.mode_1D_4_1: Line
+Scope.plot_3_2.mode_2D_4_1: xz(y)
+Scope.plot_3_2.color_4_1: 5
+Scope.plot_3_2.marker_4_1: 0
+Scope.plot_3_2.step_marker_4_1: 1
+Scope.plot_3_2.label_5: BG35
+Scope.plot_3_2.y_expr_5: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/1/Valve voltage output value BG035
+Scope.plot_3_2.mode_1D_5_1: Line
+Scope.plot_3_2.mode_2D_5_1: xz(y)
+Scope.plot_3_2.color_5_1: 6
+Scope.plot_3_2.marker_5_1: 0
+Scope.plot_3_2.step_marker_5_1: 1
+
+
+Scope.rows_in_column_3: 3
+
+Scope.plot_1_3.height: 351
+Scope.plot_1_3.grid_mode: 0
+Scope.plot_1_3.x_label: time [s]
+Scope.plot_1_3.y_label: power [MW]
+Scope.plot_1_3.x_log: false
+Scope.plot_1_3.y_log: false
+Scope.plot_1_3.update_limits: true
+Scope.plot_1_3.legend: (-5.2689182411347515,1.1430014322374096)
+Scope.plot_1_3.experiment: W7X
+Scope.plot_1_3.num_shot: 1
+Scope.plot_1_3.num_expr: 2
+Scope.plot_1_3.continuous_update: 0
+Scope.plot_1_3.global_defaults: 261889
+Scope.plot_1_3.label_1: Prad HBCm [MW]
+Scope.plot_1_3.y_expr_1: /Test/raw/W7XAnalysis/QSB_Bolometry/PradHBCm_DATASTREAM/V2/0/PradHBCm * 1e-6
+Scope.plot_1_3.mode_1D_1_1: Line
+Scope.plot_1_3.mode_2D_1_1: xz(y)
+Scope.plot_1_3.color_1_1: 7
+Scope.plot_1_3.marker_1_1: 0
+Scope.plot_1_3.step_marker_1_1: 1
+Scope.plot_1_3.label_2: Prad VBC [MW]
+Scope.plot_1_3.y_expr_2: /Test/raw/W7XAnalysis/QSB_Bolometry/PradVBC_DATASTREAM/V2/0/PradVBC * 1e-6
+Scope.plot_1_3.mode_1D_2_1: Line
+Scope.plot_1_3.mode_2D_2_1: xz(y)
+Scope.plot_1_3.color_2_1: 1
+Scope.plot_1_3.marker_2_1: 0
+Scope.plot_1_3.step_marker_2_1: 1
+
+Scope.plot_2_3.height: 351
+Scope.plot_2_3.grid_mode: 0
+Scope.plot_2_3.x_log: false
+Scope.plot_2_3.y_log: false
+Scope.plot_2_3.update_limits: true
+Scope.plot_2_3.legend: (-0.6349609375,14.02795857388058)
+Scope.plot_2_3.experiment: W7X
+Scope.plot_2_3.num_shot: 1
+Scope.plot_2_3.num_expr: 7
+Scope.plot_2_3.xmin: -0.5
+Scope.plot_2_3.xmax: 12
+Scope.plot_2_3.continuous_update: 0
+Scope.plot_2_3.global_defaults: 249601
+Scope.plot_2_3.label_1: BG11 [mbar*L/s]
+Scope.plot_2_3.y_expr_1: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/22/Actual Value Flow Valve BG011
+Scope.plot_2_3.mode_1D_1_1: Line
+Scope.plot_2_3.mode_2D_1_1: xz(y)
+Scope.plot_2_3.color_1_1: 0
+Scope.plot_2_3.marker_1_1: 0
+Scope.plot_2_3.step_marker_1_1: 1
+Scope.plot_2_3.label_2: BG12 [mbar*L/s]
+Scope.plot_2_3.y_expr_2: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/23/Actual Value Flow Valve BG012
+Scope.plot_2_3.mode_1D_2_1: Line
+Scope.plot_2_3.mode_2D_2_1: xz(y)
+Scope.plot_2_3.color_2_1: 0
+Scope.plot_2_3.marker_2_1: 0
+Scope.plot_2_3.step_marker_2_1: 1
+Scope.plot_2_3.label_3: BG13 [mbar*L/s]
+Scope.plot_2_3.y_expr_3: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/24/Actual Value Flow Valve BG013
+Scope.plot_2_3.mode_1D_3_1: Line
+Scope.plot_2_3.mode_2D_3_1: xz(y)
+Scope.plot_2_3.color_3_1: 4
+Scope.plot_2_3.marker_3_1: 0
+Scope.plot_2_3.step_marker_3_1: 1
+Scope.plot_2_3.label_4: BG14 [mbar*L/s]
+Scope.plot_2_3.y_expr_4: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/25/Actual Value Flow Valve BG014
+Scope.plot_2_3.mode_1D_4_1: Line
+Scope.plot_2_3.mode_2D_4_1: xz(y)
+Scope.plot_2_3.color_4_1: 6
+Scope.plot_2_3.marker_4_1: 0
+Scope.plot_2_3.step_marker_4_1: 1
+Scope.plot_2_3.label_5: BG15 [mbar*L/s]
+Scope.plot_2_3.y_expr_5: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/26/Actual Value Flow Valve BG015
+Scope.plot_2_3.mode_1D_5_1: Line
+Scope.plot_2_3.mode_2D_5_1: xz(y)
+Scope.plot_2_3.color_5_1: 5
+Scope.plot_2_3.marker_5_1: 0
+Scope.plot_2_3.step_marker_5_1: 1
+Scope.plot_2_3.label_6: sum [mbar*L/s]
+Scope.plot_2_3.y_expr_6: /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/26/Actual Value Flow Valve BG015 + /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/25/Actual Value Flow Valve BG014 + /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/24/Actual Value Flow Valve BG013 + /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/23/Actual Value Flow Valve BG012 + /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/23/Actual Value Flow Valve BG012 + /ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/22/Actual Value Flow Valve BG011
+Scope.plot_2_3.mode_1D_6_1: Line
+Scope.plot_2_3.mode_2D_6_1: xz(y)
+Scope.plot_2_3.color_6_1: 7
+Scope.plot_2_3.marker_6_1: 0
+Scope.plot_2_3.step_marker_6_1: 1
+Scope.plot_2_3.label_7: BG11 smooth1d
+Scope.plot_2_3.y_expr_7: smooth1d([/ArchiveDB/raw/W7X/CoDaStationDesc.10/DataModuleDesc.10_DATASTREAM/22/Actual Value Flow Valve BG011], 10)
+Scope.plot_2_3.mode_1D_7_1: Line
+Scope.plot_2_3.mode_2D_7_1: xz(y)
+Scope.plot_2_3.color_7_1: 0
+Scope.plot_2_3.marker_7_1: 0
+Scope.plot_2_3.step_marker_7_1: 1
+
+Scope.plot_3_3.height: 351
+Scope.plot_3_3.grid_mode: 0
+Scope.plot_3_3.x_log: false
+Scope.plot_3_3.y_log: false
+Scope.plot_3_3.update_limits: true
+Scope.plot_3_3.legend: (-1.1793528522056738,-19.998956994068802)
+Scope.plot_3_3.experiment: W7X
+Scope.plot_3_3.num_shot: 1
+Scope.plot_3_3.num_expr: 1
+Scope.plot_3_3.continuous_update: 0
+Scope.plot_3_3.global_defaults: 261889
+Scope.plot_3_3.label_1: AEH30 valve voltage [V]
+Scope.plot_3_3.y_expr_1: /ArchiveDB/raw/W7X/QSQ_Hebeam/Feedback_coefficients_AEH30_DATASTREAM/V1/4/AEH30 valve voltage
+Scope.plot_3_3.mode_1D_1_1: Line
+Scope.plot_3_3.mode_2D_1_1: xz(y)
+Scope.plot_3_3.color_1_1: 1
+Scope.plot_3_3.marker_1_1: 0
+Scope.plot_3_3.step_marker_1_1: 1
+
+Scope.vpane_1: 333
+Scope.vpane_2: 666

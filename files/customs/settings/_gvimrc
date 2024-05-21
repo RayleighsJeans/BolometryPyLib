@@ -1,0 +1,412 @@
+" plugins {{{
+	" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+	call plug#begin('~/.vim/plugged')
+	
+	" Make sure you use single quotes
+	
+	" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+	Plug 'junegunn/vim-easy-align'
+	
+	" Any valid git URL is allowed
+	Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+	
+	" Multiple Plug commands can be written in a single line using | separators
+	Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+	
+	" On-demand loading
+	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+  Plug 'Xuyuanp/nerdtree-git-plugin'
+	Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+	
+	" Using a non-master branch
+	Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+	
+	" old stuff
+	Plug 'tpope/vim-fugitive'
+	
+	" Git plugin not hosted on GitHub
+	Plug 'git://git.wincent.com/command-t.git'
+	
+	" The sparkup vim script is in a subdirectory of this repo called vim.
+	" Pass the path to set the runtimepath properly.
+	Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+	
+	" Install L9 and avoid a Naming conflict if you've already installed a
+	" different version somewhere else.
+	Plug 'ascenator/L9', {'name': 'newL9'}
+
+	" stuff
+	Plug 'scrooloose/syntastic'
+	Plug 'honza/vim-snippets'
+  Plug 'garbas/vim-snipmate'
+  Plug 'MarcWeber/vim-addon-mw-utils'
+	
+	" tomtom
+  Plug 'tomtom/tlib_vim'
+	Plug 'tomtom/tcomment_vim'
+	Plug 'tomtom/tselectbuffer_vim'
+	
+	Plug 'powerline/powerline'
+	Plug 'tmhedberg/SimpylFold'
+
+	" airline stuff
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	
+	" vimcolors
+	Plug 'dikiaap/minimalist'
+	Plug 'flazz/vim-colorschemes'
+	Plug 'jnurmine/Zenburn'
+	Plug 'sjl/badwolf'
+	Plug 'trapd00r/x11colors.vim'
+
+	" Python Plugs
+	Plug 'hdima/python-syntax'
+
+	" Java Plugs
+	Plug 'artur-shaik/vim-javacomplete2'
+	Plug 'sbdchd/neoformat'
+
+	" tpope
+	Plug 'tpope/vim-rails'
+	Plug 'tpope/vim-haml'
+	Plug 'tpope/vim-endwise'
+	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-ragtag'
+	Plug 'tpope/vim-unimpaired'
+
+	Plug 'ervandew/supertab'
+	Plug 'Townk/vim-autoclose'
+	Plug 'fholgado/minibufexpl.vim'
+	
+	" Initialize plugin system
+	call plug#end()
+" }}}
+" settings {{{
+	" general settings {{{
+		filetype plugin indent on    " required
+		syntax on
+		
+		" To ignore plugin indent changes, instead use:
+		filetype plugin on
+	" }}}
+	set encoding=utf-8
+	set fileencoding=utf-8
+
+	chdir W:/Documents/LABGIT
+
+	set title
+	set mouse=a
+	set hlsearch
+	set noautochdir
+
+	set modeline
+	set modelines=5
+	set number
+	set confirm
+
+	set backspace=2
+	set backspace=indent,eol,start
+
+	set ruler             " enable something
+	set cursorline        " enable hiliting of cursor line
+
+	set hidden            " buffer switching should be quick
+	set equalalways       " make splits equal size
+
+	if has('gui_running')
+		colorscheme minimalist
+		set background=dark
+		set guifont=Courier10\ BT:h11.5
+	else
+  		colorscheme zenburn
+	endif
+	
+	" if exists('+colorcolumn')
+	" 	set colorcolumn=79
+	" else
+	" 	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>88v.\+', -1)
+	" endif
+	
+	let &colorcolumn=join(range(89,999),",")
+	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>88v.\+', -1)
+	highlight ColorColumn guibg=DarkRed
+" }}}
+" Status line {{{
+	set laststatus=1      " always show statusline
+	" Generic Statusline {{{
+	function! SetStatus()
+	  setl statusline+=
+	        \%1*\ %f
+	        \%H%M%R%W%7*\ ┃
+	        \%2*\ %Y\ <<<\ %{&ff}%7*\ ┃
+	endfunction
+	
+	function! SetRightStatus()
+	  setl statusline+=
+	        \%5*\ %{StatusFileencoding()}%7*\ ┃
+	        \%5*\ %{StatusBuffersize()}%7*\ ┃
+	        \%=%<%7*\ ┃
+	        \%5*\ %{StatusWrapON()}
+	        \%6*%{StatusWrapOFF()}\ %7*┃
+	        \%5*\ %{StatusInvisiblesON()}
+	        \%6*%{StatusInvisiblesOFF()}\ %7*┃
+	        \%5*\ %{StatusExpandtabON()}
+	        \%6*%{StatusExpandtabOFF()}\ %7*┃
+	        \%5*\ w%{StatusTabstop()}\ %7*┃
+	        \%3*\ %l,%c\ >>>\ %P
+	        \\ 
+	endfunction " }}}
+	" Update when leaving Buffer {{{
+	function! SetStatusLeaveBuffer()
+	  setl statusline=""
+	  call SetStatus()
+	endfunction
+	au BufLeave ?* call SetStatusLeaveBuffer() " }}}
+	" Update when switching mode {{{
+	function! SetStatusInsertMode(mode)
+	  setl statusline=%4*
+	  if a:mode == 'i'
+	    setl statusline+=\ Einfügen\ ◥
+	  elseif a:mode == 'r'
+	    setl statusline+=\ Ersetzen\ ◥
+	  elseif a:mode == 'normal'
+	    setl statusline+=\ \ ◥
+	  endif
+	  call SetStatus()
+	  call SetRightStatus()
+	endfunction
+	
+	au VimEnter     ?* call SetStatusInsertMode('normal')
+	au InsertEnter  ?* call SetStatusInsertMode(v:insertmode)
+	au InsertLeave  ?* call SetStatusInsertMode('normal')
+	au BufEnter     ?* call SetStatusInsertMode('normal') " }}}
+	" Some Functions shamelessly ripped and modified from Cream
+	" fileencoding (three characters only) {{{
+		function! StatusFileencoding()
+		  if &fileencoding == ""
+		    if &encoding != ""
+		      return &encoding
+		    else
+		      return " -- "
+		    endif
+		  else
+		    return &fileencoding
+		  endif
+		endfunc " }}}
+	" &expandtab {{{
+		function! StatusExpandtabON()
+		  if &expandtab == 0
+		    return "tabs"
+		  else
+		    return ""
+		  endif
+		endfunction "
+		function! StatusExpandtabOFF()
+		  if &expandtab == 0
+		    return ""
+		  else
+		    return "tabs"
+		  endif
+		endfunction " }}}
+	" tabstop and softtabstop {{{
+		function! StatusTabstop()
+		
+		  " show by Vim option, not Cream global (modelines)
+		  let str = "" . &tabstop
+		  " show softtabstop or shiftwidth if not equal tabstop
+		  if   (&softtabstop && (&softtabstop != &tabstop))
+		  \ || (&shiftwidth  && (&shiftwidth  != &tabstop))
+		    if &softtabstop
+		      let str = str . ":sts" . &softtabstop
+		    endif
+		    if &shiftwidth != &tabstop
+		      let str = str . ":sw" . &shiftwidth
+		    endif
+		  endif
+		  return str
+		
+		endfunction " }}}
+	" Buffer Size {{{
+		function! StatusBuffersize()
+		  let bufsize = line2byte(line("$") + 1) - 1
+		  " prevent negative numbers (non-existant buffers)
+		  if bufsize < 0
+		    let bufsize = 0
+		  endif
+		  " add commas
+		  let remain = bufsize
+		  let bufsize = ""
+		  while strlen(remain) > 3
+		    let bufsize = "," . strpart(remain, strlen(remain) - 3) . bufsize
+		    let remain = strpart(remain, 0, strlen(remain) - 3)
+		  endwhile
+		  let bufsize = remain . bufsize
+		  " too bad we can't use "¿" (nr2char(1068)) :)
+		  let char = "b"
+		  return bufsize . char
+		endfunction " }}}
+	" Show Invisibles {{{
+		function! StatusInvisiblesON()
+		  "if exists("g:LIST") && g:LIST == 1
+		  if &list
+		    if     &encoding == "latin1"
+		      return "¶"
+		    elseif &encoding == "utf-8"
+		      return "¶"
+		    else
+		      return "$"
+		    endif
+		  else
+		    return ""
+		  endif
+		endfunction
+		function! StatusInvisiblesOFF()
+		  "if exists("g:LIST") && g:LIST == 1
+		  if &list
+		    return ""
+		  else
+		    if     &encoding == "latin1"
+		      return "¶"
+		    elseif &encoding == "utf-8"
+		      return "¶"
+		    else
+		      return "$"
+		    endif
+		  endif
+		endfunction " }}}
+	" Wrap Enabled {{{
+		function! StatusWrapON()
+		  if &wrap
+		    return "wrap"
+		  else
+		    return ""
+		  endif
+		endfunction
+		function! StatusWrapOFF()
+		  if &wrap
+		    return ""
+		  else
+		    return "wrap"
+		  endif
+		endfunction
+	" }}}
+" }}}
+" Tabstops {{{
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set autoindent
+	set smartindent
+	set expandtab
+" }}}
+" Invisibles {{{
+	set listchars=tab:>\ ,eol:<
+	set list
+	nmap <silent> <F5> :set list!<CR>
+" }}}
+" Pairings {{{
+	set showmatch
+" }}}
+" Margins {{{
+	set scrolloff=5
+	set sidescroll=5
+" }}}
+" Search {{{
+	set incsearch
+	set ignorecase
+" }}}
+" Backup files {{{
+	set nobackup
+	set nowb
+	set noswapfile
+" }}}
+" Completion {{{
+	set wildmenu
+	set wildmode=longest,full,list
+	set ofu=syntaxcomplete#Complete
+" }}}
+" Wrapping {{{
+	set linebreak
+	set showbreak=↳\ 
+	nmap <silent> <F12> :let &wrap = !&wrap<CR>
+" }}}
+" Folds {{{
+	set foldmethod=marker
+	set foldcolumn=1
+" }}}
+" Pasting {{{
+	set paste
+	nnoremap p ]p
+	nnoremap <c-p> p
+" }}}
+" syntastic {{{
+  set statusline+=%{exists('g:loaded_syntastic_plugin')?SyntasticStatuslineFlag():''}
+  let g:syntastic_always_populate_loc_list = 1
+  let g:syntastic_auto_loc_list = 1
+  let g:syntastic_check_on_open = 1
+  let g:syntastic_check_on_wq = 1 
+" }}}
+" snipmate {{{
+  let g:snipMate = get(g:, 'snipMate', {})
+  let g:snipMate.scope_aliases = {}
+  let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
+" }}}
+" vim airline {{{
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+" }}}
+" python syntax {{{
+  let python_highlight_builtins = 1
+  let python_highlight_builtin_objs = 0
+  let python_highlight_builtin_funcs = 0
+  let python_highlight_exceptions = 1
+  let python_highlight_string_formatting = 1 
+  let python_highlight_string_format = 1 
+  let python_highlight_string_templates = 1
+  let python_highlight_indent_errors = 1
+  let python_highlight_space_errors = 1
+  let python_highlight_doctests = 0
+  let python_print_as_function = 0
+  let python_highlight_file_headers_as_comments = 1
+  let python_highlight_all = 0
+  let python_slow_sync = 0
+" }}}
+" NERDTree {{{
+  autocmd StdinReadPre ?* let s:std_in=1
+  autocmd VimEnter ?* if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+  autocmd bufenter ?* if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+  map <F3> :NERDTreeToggle<CR>
+  let NERDTreeChDirMode = 2
+  let NERDTreeShowBookmarks = 1
+  let g:NERDTreeDirArrowExpandable = '▸'
+  let g:NERDTreeDirArrowCollapsible = '▾'
+  let NERDTreeIgnore = ['\.pyc$', 'Thumbs.db', 'Pipfile', '\.swp$', '\.swa$',
+                        \ '\~$', '__pycache__']
+  " vim git nerdtree plugin
+  let g:NERDTreeIndicatorMapCustom = {
+      \ "Modified"  : "✹",
+      \ "Staged"    : "✚",
+      \ "Untracked" : "✭",
+      \ "Renamed"   : "➜",
+      \ "Unmerged"  : "═",
+      \ "Deleted"   : "✖",
+      \ "Dirty"     : "✗",
+      \ "Clean"     : "✔︎",
+      \ 'Ignored'   : '☒',
+      \ "Unknown"   : "?"
+      \ }
+" }}}
+" javacomplete2 {{{
+  autocmd FileType java setlocal omnifunc=javacomplete#Complete
+  nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+  imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+  nmap <F5> <Plug>(JavaComplete-Imports-Add)
+  imap <F5> <Plug>(JavaComplete-Imports-Add)
+  nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+  imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+  nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+  imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+" }}}
